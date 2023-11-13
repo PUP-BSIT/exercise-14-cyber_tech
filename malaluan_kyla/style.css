@@ -27,7 +27,6 @@ p {
         font-family: Lucida Handwriting, Cursive;
 }
 
-/* overall style for div  */
 div {
         background-color: #ffa500; 
         margin: 20px;
@@ -36,7 +35,6 @@ div {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* my interest and hobbies style */
 #section_1 {
         background-color: #FBEC5D;
         color: #333;
@@ -45,7 +43,6 @@ div {
         font-family: Georgia, Serif;
 }
     
-/* my works style */
 #section_2 {
         background-color: #FFDB58;
         color: #333;
@@ -54,7 +51,6 @@ div {
         font-family: Georgia, Serif;
 }
     
-/* testimonial style */
 #testimonials {
         background-color: #EEDC82;
         color: #333;
@@ -64,7 +60,6 @@ div {
     
 }
     
-/* goals style */
 #goals {
         background-color: #cab438 ;
         color: #333;
@@ -73,7 +68,6 @@ div {
         font-family: Georgia, Serif;
 }
 
-/* comment style */
 #comments {
         background-color:#e8e525;
         color: #333;
@@ -83,7 +77,6 @@ div {
         font-family: Georgia, Serif;
 }
 
-/* Form style */
 form {
     text-align: center;
     margin: 20px;
@@ -110,7 +103,6 @@ textarea {
     font-family: Arial, Sans-serif;
 }
 
-/* Form style */
 form {
     text-align: center;
     margin: 20px;
@@ -149,7 +141,6 @@ button {
     margin: auto;
 }
 
-/* pic style */
 #gallery {
         background-color: #ebd13d;
         color: #333;
