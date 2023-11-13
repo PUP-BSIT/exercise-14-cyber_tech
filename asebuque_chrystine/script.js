@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
         newComment.appendChild(commentText);
         commentsList.appendChild(newComment);
 
-        // Clear input fields after adding the comment
         nameInput.value = "";
         commentInput.value = "";
         commentButton.disabled = true;
