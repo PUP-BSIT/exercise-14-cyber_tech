@@ -18,6 +18,8 @@ function init() {
         const name = nameInput.value.trim();
         const comment = commentText.value.trim();
         commentButton.disabled = !(name.length && comment.length);
+        ascendingButton.disabled = !(commentsArray.length);
+        descendingButton.disabled = !(commentsArray.length);
     }
 
     // Function to add a new comment at the top of the list
@@ -35,14 +37,12 @@ function init() {
 
             commentsArray.unshift(newComment);
 
-            // Sort comments based on date in descending order by default
             sortComments("desc");
 
             // Clear the input fields
             nameInput.value = "";
             commentText.value = "";
 
-            // Recheck and disable the button after adding the comment
             checkFields();
         }
     }
