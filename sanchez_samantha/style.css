@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(to bottom, #6B5B95, #7E87A1); 
+    font-family: Arial; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px;
+}
+
+.header h1 {
+    color: #fff; 
+    margin: 0;
+}
+
+.header img {
+    max-width: 150px; 
+    height: auto;
+}
+
+
+/* Style the sections */
+div {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Style the headings */
+h2 {
+    color: #6B5B95; 
+}
+
+/* Style the lists */
+ul, ol {
+    margin-top: 10px; 
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Style for the gallery container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
+}
+
+/* Style for each gallery item */
+.gallery-item {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the images in the gallery */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Style the form */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Style form labels */
+form label {
+    display: block;
+    color: #6B5B95;
+    margin-bottom: 10px;
+}
+
+/* Style form input and textarea fields */
+form input[type="text"],
+form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form submit button */
+form button {
+    padding: 10px 20px;
+    background-color: #6B5B95;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
