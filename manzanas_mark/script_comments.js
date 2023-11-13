@@ -10,7 +10,7 @@ function init() {
     const commentsForm = document.getElementById("registration_form");
     const commentsList = document.getElementById("comments_list");
 
-    // Array to store comments
+    
     let commentsArray = [];
 
     //Function to check if both fields are filled and enable/disable the button
@@ -33,7 +33,6 @@ function init() {
                 comment,
             };
 
-            // Add the new comment to the comments array
             commentsArray.unshift(newComment);
 
             // Sort comments based on date in descending order by default
