@@ -104,3 +104,10 @@ button:disabled {
 button:hover {
     background-color: #007bff;
 }
+
+#comments_list li {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
