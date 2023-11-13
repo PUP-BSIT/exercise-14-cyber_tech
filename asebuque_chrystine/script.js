@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById("name");
     const commentInput = document.getElementById("comment");
     const commentButton = document.getElementById("comment_button");
