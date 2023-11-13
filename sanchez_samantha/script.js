@@ -8,8 +8,7 @@ updateSubmitButton();
 nameInput.addEventListener("input", updateSubmitButton);
 commentInput.addEventListener("input", updateSubmitButton);
 submitButton.addEventListener("click", addComment);
-
-// Function to enable/disable the submit button 
+ 
 function updateSubmitButton() {
     if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
         submitButton.removeAttribute("disabled");
@@ -18,7 +17,6 @@ function updateSubmitButton() {
     }
 }
 
-// Function to add a new comment to the comments section
 function addComment() {
     if (nameInput.value.trim() === "" || commentInput.value.trim() === "") {
         return; 

@@ -5,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Style the header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -24,8 +23,6 @@ body {
     height: auto;
 }
 
-
-/* Style the sections */
 div {
     background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
@@ -33,12 +30,10 @@ div {
     border-radius: 10px;
 }
 
-/* Style the headings */
 h2 {
     color: #6B5B95; 
 }
 
-/* Style the lists */
 ul, ol {
     margin-top: 10px; 
     padding-left: 20px;
@@ -48,20 +43,17 @@ ul li, ol li {
     margin-bottom: 10px;
 }
 
-/* Style for the gallery container */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 10px; 
 }
 
-/* Style for each gallery item */
 .gallery-item {
     margin: 0;
     padding: 0;
 }
 
-/* Style for the images in the gallery */
 .gallery-item img {
     max-width: 100%;
     height: auto;
@@ -69,7 +61,6 @@ ul li, ol li {
     border-radius: 5px;
 }
 
-/* Style the form */
 form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -77,14 +68,12 @@ form {
     border-radius: 10px;
 }
 
-/* Style form labels */
 form label {
     display: block;
     color: #6B5B95;
     margin-bottom: 10px;
 }
 
-/* Style form input and textarea fields */
 form input[type="text"],
 form textarea {
     width: 98%;
@@ -94,7 +83,6 @@ form textarea {
     border-radius: 5px;
 }
 
-/* Style the form submit button */
 form button {
     padding: 10px 20px;
     background-color: #6B5B95;
