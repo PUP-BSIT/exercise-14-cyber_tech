@@ -28,13 +28,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const newComment = document.createElement("li");
         const commentText = document.createElement("p");
+
+        const currentDate = new Date().toLocaleDateString();
+        newComment.setAttribute("data-date", currentDate);
+
         commentText.textContent = `${name}: ${comment}`;
         newComment.appendChild(commentText);
         commentsList.appendChild(newComment);
 
-        // Clear input fields after adding the comment
         nameInput.value = "";
         commentInput.value = "";
         commentButton.disabled = true;
     }
+
+    function sortComments(order) {
+        const comments = Array.from(commentsList.children);
+
+        comments.sort((a, b) => {
+            const dateA = new Date(a.getAttribute("data-date"));
+            const dateB = new Date(b.getAttribute("data-date"));
+
+            if (order === "asc") {
+                return dateA - dateB;
+            } else {
+                return dateB - dateA;
+            }
+        });
+
+        commentsList.innerHTML = "";
+
+        comments.forEach(comment => {
+            commentsList.appendChild(comment);
+        });
+    }
+
+    document.getElementById("sort_asc").addEventListener(
+        "click", () => sortComments("asc")
+        );
+    document.getElementById("sort_desc").addEventListener(
+        "click", () => sortComments("desc")
+        );
 });
