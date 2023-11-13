@@ -13,7 +13,6 @@ const toggleButtonState = () => {
     }
 };
 
-// Event listener to toggle button state on input changes
 nameInput.addEventListener('input', toggleButtonState);
 commentInput.addEventListener('input', toggleButtonState);
 
