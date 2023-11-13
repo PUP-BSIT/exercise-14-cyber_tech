@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a border */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    /* Add a border to the header */
+}
+
+header h1 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Style the navigation menu as buttons */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    /* Button background color */
+    padding: 10px 20px;
+    /* Adjust padding to control button size */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+/* Add a hover effect to buttons */
+nav a:hover {
+    background-color: #555;
+    /* Button background color on hover */
+}
+
+/* Style the list items and their content as bold */
+li strong {
+    font-weight: bold;
+}
+
+/* Style the image container */
+.image-container {
+    display: inline-block;
+    margin: 15px;
+    max-width: 150px;
+    /* Set the maximum width for the images */
+}
+
+/* Style the images inside the container */
+.image-container img {
+    max-width: 100%;
+    /* Ensure the images don't exceed the container width */
+    height: auto;
+    /* Maintain the aspect ratio of the images */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Style the specific <li> elements with the class "bold-text" as bold */
+p.bold-text {
+    font-weight: bold;
+}
+
+/* Add a gray background color to section headers */
+section h2 {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+}
+
+/* Style all sections */
+section {
+    border: 2px solid #333;
+    /* Add a border around all sections */
+    margin: 20px;
+    /* Add margin to provide space around all sections */
+    padding: 20px;
+    /* Add padding within all sections */
+}
+
+/* Style the My Works list items as buttons */
+section#works li a {
+    display: block;
+    padding: 10px 0;
+    /* Adjust padding to control button size */
+    background-color: #d3d3d3;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    /* Make the buttons cover the entire line inside the border */
+}
+
+/* Add a hover effect to the My Works buttons */
+section#works li a:hover {
+    background-color: #555;
+}
+
+#testimonials {
+    border: 2px solid #333;
+    /* Add a border around the section */
+    margin: 20px;
+    /* Add margin to provide space around the section */
+    padding: 20px;
+    /* Add padding within the section */
+}
+
+#testimonials h2 {
+    font-size: 24px;
+    /* Increase the font size of the heading */
+    text-align: center;
+    
+}
+
+#testimonials p {
+    font-size: 16px;
+    
+    line-height: 1.5;
+   
+}
+
+/* Add margin to the form div */
+div {
+    margin: 20px;
+    
+}
+
+/* Style the form and its contents */
+form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    
+}
+
+label {
+    display: block;
+    /* Display labels on separate lines */
+    margin-bottom: 10px;
+    /* Add space between labels and form elements */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    /* Make form elements expand to the full width of the form */
+    padding: 10px;
+    /* Adjust padding for form elements */
+    border: 1px solid #ccc;
+    /* Add a border to form elements */
+    border-radius: 5px;
+    /* Rounded corners for form elements */
+    margin-bottom: 10px;
+    /* Add space between form elements */
+}
+
+button[type="comment"] {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="comment"]:hover {
+    background-color: #333;
+}
