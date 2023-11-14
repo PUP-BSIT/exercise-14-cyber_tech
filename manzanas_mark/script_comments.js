@@ -103,8 +103,7 @@ function init() {
             const commentPara = document.createElement("p");
             commentPara.classList.add("comment");
             commentPara.textContent = comment.comment;
-
-            
+           
             userProfile.appendChild(username);
             userProfile.appendChild(dateSpan); // Add the date span
             userProfile.appendChild(timeSpan); // Add the time span
