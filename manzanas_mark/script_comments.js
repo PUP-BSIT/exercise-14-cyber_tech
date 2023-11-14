@@ -104,7 +104,7 @@ function init() {
             commentPara.classList.add("comment");
             commentPara.textContent = comment.comment;
 
-            // Append paragraphs to comment content divs
+            
             userProfile.appendChild(username);
             userProfile.appendChild(dateSpan); // Add the date span
             userProfile.appendChild(timeSpan); // Add the time span
