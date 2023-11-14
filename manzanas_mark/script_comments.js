@@ -10,10 +10,8 @@ function init() {
     const commentsForm = document.getElementById("registration_form");
     const commentsList = document.getElementById("comments_list");
 
-    
     let commentsArray = [];
 
-    //Function to check if both fields are filled and enable/disable the button
     function checkFields() {
         const name = nameInput.value.trim();
         const comment = commentText.value.trim();
@@ -105,14 +103,12 @@ function init() {
             const commentPara = document.createElement("p");
             commentPara.classList.add("comment");
             commentPara.textContent = comment.comment;
-
-            // Append paragraphs to the user profile and comment content divs
+           
             userProfile.appendChild(username);
             userProfile.appendChild(dateSpan); // Add the date span
             userProfile.appendChild(timeSpan); // Add the time span
             commentContent.appendChild(commentPara);
 
-            // Append user profile and comment content divs to the comment item div
             li.appendChild(userProfile);
             li.appendChild(commentContent);
 
@@ -136,7 +132,23 @@ function init() {
     commentsForm.addEventListener("submit", (event) => {
         event.preventDefault();
     });
-}
 
-// Initial comments load, if any
-updateCommentsList();
+    const initialComments = 
+    Array.from(commentsList.children).map((commentElement) => {
+        const username = 
+        commentElement.querySelector(".username").textContent.trim();
+        const date = 
+        commentElement.querySelector(".date").textContent.trim();
+        const comment = 
+        commentElement.querySelector(".comment").textContent.trim();
+
+        return {
+            name: username,
+            date: new Date(date),
+            comment,
+        };
+    });
+
+    commentsArray = initialComments;
+    updateCommentsList();
+}
