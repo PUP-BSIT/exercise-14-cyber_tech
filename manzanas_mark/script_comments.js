@@ -12,7 +12,6 @@ function init() {
 
     let commentsArray = [];
 
-    // Function to check if both fields are filled and enable/disable the button
     function checkFields() {
         const name = nameInput.value.trim();
         const comment = commentText.value.trim();
@@ -105,13 +104,12 @@ function init() {
             commentPara.classList.add("comment");
             commentPara.textContent = comment.comment;
 
-            // Append paragraphs to the user profile and comment content divs
+            // Append paragraphs to comment content divs
             userProfile.appendChild(username);
             userProfile.appendChild(dateSpan); // Add the date span
             userProfile.appendChild(timeSpan); // Add the time span
             commentContent.appendChild(commentPara);
 
-            // Append user profile and comment
             li.appendChild(userProfile);
             li.appendChild(commentContent);
 
@@ -136,7 +134,6 @@ function init() {
         event.preventDefault();
     });
 
-    // Initial comments load, if any
     const initialComments = 
     Array.from(commentsList.children).map((commentElement) => {
         const username = 
